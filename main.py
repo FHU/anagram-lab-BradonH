@@ -1,5 +1,13 @@
 #REMOVE PASS AND FIX THIS FUNCTION
 def anagram(a,b):
+    a.replace(' ', '')
+    b.replace(' ', '')
+    list1 = []
+    list2 = []
+    for x in range(len(a)):
+        list1.append(a[x])
+    for y in range(len(b)):
+        list2.append(b[y])
     if len(a) == len(b):
         for w in range(len(a)):
             if a[w] in b == True:
