@@ -1,5 +1,7 @@
 #REMOVE PASS AND FIX THIS FUNCTION
 def anagram(a,b):
+    if len(a) <= 1:
+        return False
     a = a.lower()
     b = b.lower()
     a = a.replace(' ', '')
